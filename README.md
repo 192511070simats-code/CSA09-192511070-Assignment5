@@ -24,3 +24,21 @@ Compile and run each Java program from its task folder. The exact commands and r
 
 ## Results
 Task results, test evidence and actual performance measurements will be documented as the work progresses.
+
+## A3 – Data-Access Object (DAO) Pattern
+
+**Folder:** Task03-A3-DAO-Pattern
+
+**Implementation:**
+- Created generic Dao<T, K> interface with five CRUD methods.
+- Created Student model class.
+- Implemented StudentDao using JDBC and PreparedStatement.
+- Created the college_db student table using schema.sql.
+- Used try-with-resources to close statements and result sets.
+
+**Tests:**
+- DaoDesignTest: passed.
+- MySQL JDBC integration test: all five operations passed (insert, findById, findAll, update and delete).
+
+**Database:** MySQL Server 8.0, database college_db, table student.
+
