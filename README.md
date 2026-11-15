@@ -42,3 +42,24 @@ Task results, test evidence and actual performance measurements will be document
 
 **Database:** MySQL Server 8.0, database college_db, table student.
 
+
+## A4 – What Should Be Serialized?
+
+**Folder:** `Task04-A4-Serialization`
+
+**Implementation:**
+- Created serializable Hostel, Room and Resident classes.
+- Marked Resident.password and Resident.databaseConnection as transient.
+- Saved and restored the Hostel object graph using ObjectOutputStream and ObjectInputStream.
+- Tested class evolution by adding phoneNumber while retaining serialVersionUID = 1L.
+
+**Main test result:**
+- 2 rooms and 3 residents restored successfully.
+- Password and database connection fields were null after loading.
+- Serialized file size: 445 bytes.
+
+**Versioning test result:**
+- Old serialized file loaded successfully using the new class.
+- The new phoneNumber field received its default value, null.
+
+**Analysis:** See `Task04-A4-Serialization/A4-Analysis.md`.
