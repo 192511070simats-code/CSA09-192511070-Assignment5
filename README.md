@@ -96,3 +96,11 @@ Task results, test evidence and actual performance measurements will be document
 - Documented the HashMap alternative and its time and memory trade-offs.
 
 **Analysis:** `Task06-B1-File-Store/B1-Analysis.md`
+## B2 - Engineer an Adversarial Input
+
+- Demonstrated SQL injection using a deliberately crafted username.
+- Compared unsafe SQL concatenation with PreparedStatement.
+- Tested damaged bus-pass records, including incorrect field count, non-numeric amount, empty line, empty name, and non-numeric route.
+- Verified that stronger validation accepts two valid records and rejects five damaged or empty records.
+- Analysis: Task07-B2-AdversarialInput/B2-Analysis.md
+- Task instructions: Task07-B2-AdversarialInput/README.md
