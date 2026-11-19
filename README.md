@@ -63,3 +63,15 @@ Task results, test evidence and actual performance measurements will be document
 - The new phoneNumber field received its default value, null.
 
 **Analysis:** See `Task04-A4-Serialization/A4-Analysis.md`.
+
+## A5 – Design for Correctness and Safety
+
+- Implemented JDBC wallet transfer using `setAutoCommit(false)`, `commit()` and `rollback()`.
+- Tested a simulated failure between debit and credit; both balances remained unchanged after rollback.
+- Tested successful transfer of Rs. 500; hostel balance became Rs. 500 and canteen balance became Rs. 700.
+- Demonstrated SQL injection against string-concatenated login SQL.
+- Redesigned login verification using parameterized `PreparedStatement`.
+- Documented auto-commit failure risks, transaction overhead and time complexity.
+- Analysis: `Task05-A5-Transaction-Safety/A5-Analysis.md`
+- Java source: `Task05-A5-Transaction-Safety/src/`
+- SQL scripts: `Task05-A5-Transaction-Safety/database/`

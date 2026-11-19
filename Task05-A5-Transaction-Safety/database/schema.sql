@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS assignment5_db;
+USE assignment5_db;
+
+CREATE TABLE IF NOT EXISTS wallets (
+    wallet_id VARCHAR(20) PRIMARY KEY,
+    balance DECIMAL(12,2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS demo_users (
+    id VARCHAR(50) PRIMARY KEY,
+    pwd VARCHAR(100) NOT NULL
+);
