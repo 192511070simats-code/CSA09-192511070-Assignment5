@@ -64,7 +64,7 @@ Task results, test evidence and actual performance measurements will be document
 
 **Analysis:** See `Task04-A4-Serialization/A4-Analysis.md`.
 
-## A5 – Design for Correctness and Safety
+## A5 ï¿½ Design for Correctness and Safety
 
 - Implemented JDBC wallet transfer using `setAutoCommit(false)`, `commit()` and `rollback()`.
 - Tested a simulated failure between debit and credit; both balances remained unchanged after rollback.
@@ -75,3 +75,24 @@ Task results, test evidence and actual performance measurements will be document
 - Analysis: `Task05-A5-Transaction-Safety/A5-Analysis.md`
 - Java source: `Task05-A5-Transaction-Safety/src/`
 - SQL scripts: `Task05-A5-Transaction-Safety/database/`
+
+## B1 â€“ Implement and Instrument the File Store
+
+**Folder:** `Task06-B1-File-Store`
+
+**Implementation:**
+- Implemented a text-based bus-pass file store with add, find and list operations.
+- Used BufferedReader to search records line by line.
+- Skipped damaged records that do not contain exactly five fields.
+- Used try-with-resources for file handling.
+
+**Validation:**
+- Normal search, missing ID, damaged record, listing and adding tests passed.
+- Search time measured for 1,000, 10,000, 50,000 and 100,000 records.
+
+**Performance:**
+- Compared buffered and unbuffered line counting for 1 MB, 10 MB and 50 MB files.
+- Buffered reading was significantly faster in all three tests.
+- Documented the HashMap alternative and its time and memory trade-offs.
+
+**Analysis:** `Task06-B1-File-Store/B1-Analysis.md`
