@@ -1,0 +1,4 @@
+B4 MIGRATION VALIDATION FAILURE REPORT
+Input file: Task09-B4-Final-Engineering-Decision\input\buspasses.csv
+
+Line 2: Expected 5 fields but found 2 | P1002,DAMAGEDLINE

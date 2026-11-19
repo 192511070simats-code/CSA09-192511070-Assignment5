@@ -1,5 +1,5 @@
-# Programming in Java – Assignment 5
-## CO5: Data Persistence Engineering – Files and Databases
+# Programming in Java â€“ Assignment 5
+## CO5: Data Persistence Engineering â€“ Files and Databases
 
 **Name:** K Suthesika  
 **Register Number:** 192511070  
@@ -9,15 +9,15 @@
 
 | Folder | Task |
 |---|---|
-| Task01 | A1 – Design a File Format |
-| Task02 | A2 – Buffered I/O |
-| Task03 | A3 – Data-Access Design Pattern |
-| Task04 | A4 – Serialization |
-| Task05 | A5 – Transactions and Injection |
-| Task06 | B1 – Implement and Instrument the File Store |
-| Task07 | B2 – Adversarial Input |
-| Task08 | B3 – Statement vs PreparedStatement vs Batch |
-| Task09 | B4 – Final Engineering Decision |
+| Task01 | A1 â€“ Design a File Format |
+| Task02 | A2 â€“ Buffered I/O |
+| Task03 | A3 â€“ Data-Access Design Pattern |
+| Task04 | A4 â€“ Serialization |
+| Task05 | A5 â€“ Transactions and Injection |
+| Task06 | B1 â€“ Implement and Instrument the File Store |
+| Task07 | B2 â€“ Adversarial Input |
+| Task08 | B3 â€“ Statement vs PreparedStatement vs Batch |
+| Task09 | B4 â€“ Final Engineering Decision |
 
 ## Compile and Run
 Compile and run each Java program from its task folder. The exact commands and results will be added as each task is completed.
@@ -25,7 +25,7 @@ Compile and run each Java program from its task folder. The exact commands and r
 ## Results
 Task results, test evidence and actual performance measurements will be documented as the work progresses.
 
-## A3 – Data-Access Object (DAO) Pattern
+## A3 â€“ Data-Access Object (DAO) Pattern
 
 **Folder:** Task03-A3-DAO-Pattern
 
@@ -64,7 +64,7 @@ Task results, test evidence and actual performance measurements will be document
 
 **Analysis:** See `Task04-A4-Serialization/A4-Analysis.md`.
 
-## A5 � Design for Correctness and Safety
+## A5 ï¿½ Design for Correctness and Safety
 
 - Implemented JDBC wallet transfer using `setAutoCommit(false)`, `commit()` and `rollback()`.
 - Tested a simulated failure between debit and credit; both balances remained unchanged after rollback.
@@ -76,7 +76,7 @@ Task results, test evidence and actual performance measurements will be document
 - Java source: `Task05-A5-Transaction-Safety/src/`
 - SQL scripts: `Task05-A5-Transaction-Safety/database/`
 
-## B1 – Implement and Instrument the File Store
+## B1 â€“ Implement and Instrument the File Store
 
 **Folder:** `Task06-B1-File-Store`
 
@@ -105,7 +105,7 @@ Task results, test evidence and actual performance measurements will be document
 - Analysis: Task07-B2-AdversarialInput/B2-Analysis.md
 - Task instructions: Task07-B2-AdversarialInput/README.md
 
-## B3 – JDBC Statement, PreparedStatement and Batch
+## B3 â€“ JDBC Statement, PreparedStatement and Batch
 
 - Compared Statement, PreparedStatement and batch insertion.
 - Verified 10 records using SELECT and ResultSetMetaData.
@@ -116,3 +116,15 @@ Task results, test evidence and actual performance measurements will be document
 - Compared batch insertion with alternative bulk-loading approaches.
 - Detailed analysis: [B3-Analysis.md](Task08-B3-JDBC-Batch/B3-Analysis.md)
 - Task instructions and results: [B3 README](Task08-B3-JDBC-Batch/README.md)
+
+## B4 – Final Engineering Decision
+
+- Implemented a streaming CSV-to-MySQL migration using BufferedReader and PreparedStatement batches of 1,000.
+- Used one database transaction with commit and rollback handling.
+- Validated records and generated a failure report with line numbers and reasons.
+- Migration test: 4 input records, 3 valid records imported, 1 damaged record reported.
+- Used DatabaseMetaData to identify MySQL 8.0.44, MySQL Connector/J 26.10.0 and the bus_pass table.
+- Recommended a shared MySQL/InnoDB database for the 12-campus production system.
+- Compared text files, Java serialization and relational database storage.
+- Detailed analysis: Task09-B4-Final-Engineering-Decision/B4-Analysis.md
+- Task instructions and commands: Task09-B4-Final-Engineering-Decision/README.md
