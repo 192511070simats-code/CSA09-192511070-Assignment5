@@ -104,3 +104,15 @@ Task results, test evidence and actual performance measurements will be document
 - Verified that stronger validation accepts two valid records and rejects five damaged or empty records.
 - Analysis: Task07-B2-AdversarialInput/B2-Analysis.md
 - Task instructions: Task07-B2-AdversarialInput/README.md
+
+## B3 – JDBC Statement, PreparedStatement and Batch
+
+- Compared Statement, PreparedStatement and batch insertion.
+- Verified 10 records using SELECT and ResultSetMetaData.
+- Benchmarked 1,000, 10,000 and 100,000 records.
+- At 100,000 records, batch insertion took 3,242.499 ms.
+- Tested auto-commit and transaction rollback.
+- Verified that auto-commit retained 1,000 records after failure, while transaction rollback retained zero.
+- Compared batch insertion with alternative bulk-loading approaches.
+- Detailed analysis: [B3-Analysis.md](Task08-B3-JDBC-Batch/B3-Analysis.md)
+- Task instructions and results: [B3 README](Task08-B3-JDBC-Batch/README.md)
