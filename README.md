@@ -25,7 +25,7 @@ Compile and run each Java program from its task folder. The exact commands and r
 ## Results
 Task results, test evidence and actual performance measurements will be documented as the work progresses.
 
-## A3 â€“ Data-Access Object (DAO) Pattern
+## A3  Data-Access Object (DAO) Pattern
 
 **Folder:** Task03-A3-DAO-Pattern
 
@@ -64,7 +64,7 @@ Task results, test evidence and actual performance measurements will be document
 
 **Analysis:** See `Task04-A4-Serialization/A4-Analysis.md`.
 
-## A5 ï¿½ Design for Correctness and Safety
+## A5 Design for Correctness and Safety
 
 - Implemented JDBC wallet transfer using `setAutoCommit(false)`, `commit()` and `rollback()`.
 - Tested a simulated failure between debit and credit; both balances remained unchanged after rollback.
@@ -76,7 +76,7 @@ Task results, test evidence and actual performance measurements will be document
 - Java source: `Task05-A5-Transaction-Safety/src/`
 - SQL scripts: `Task05-A5-Transaction-Safety/database/`
 
-## B1 â€“ Implement and Instrument the File Store
+## B1 Implement and Instrument the File Store
 
 **Folder:** `Task06-B1-File-Store`
 
@@ -105,7 +105,7 @@ Task results, test evidence and actual performance measurements will be document
 - Analysis: Task07-B2-AdversarialInput/B2-Analysis.md
 - Task instructions: Task07-B2-AdversarialInput/README.md
 
-## B3 â€“ JDBC Statement, PreparedStatement and Batch
+## B3 JDBC Statement, PreparedStatement and Batch
 
 - Compared Statement, PreparedStatement and batch insertion.
 - Verified 10 records using SELECT and ResultSetMetaData.
