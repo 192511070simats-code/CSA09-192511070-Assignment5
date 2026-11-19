@@ -1,5 +1,5 @@
-# Programming in Java â€“ Assignment 5
-## CO5: Data Persistence Engineering â€“ Files and Databases
+# Programming in Java Assignment 5
+## CO5: Data Persistence Engineering Files and Databases
 
 **Name:** K Suthesika  
 **Register Number:** 192511070  
@@ -9,8 +9,8 @@
 
 | Folder | Task |
 |---|---|
-| Task01 | A1 â€“ Design a File Format |
-| Task02 | A2 â€“ Buffered I/O |
+| Task01 | A1  Design a File Format |
+| Task02 | A2  Buffered I/O |
 | Task03 | A3 â€“ Data-Access Design Pattern |
 | Task04 | A4 â€“ Serialization |
 | Task05 | A5 â€“ Transactions and Injection |
